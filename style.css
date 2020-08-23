@@ -1,8 +1,5 @@
-
-
-/* Haven Survey  */
 #top-img {
-    background-image: url(hotel.jpg);
+    background-image: url(../img/hotel.jpg);
     width: 1080px;
     height: 200px;
     background-size:cover ;
@@ -10,19 +7,23 @@
 }
 
 #frame{
-    border-radius: 40px;
+    border-radius: 0 0 40px 40px;
     border: 2px #00309E solid ;
-    margin-top: 20px;
     padding: 0 40px 40px 40px;
     color: #00309E;
 }
+
 #form-header{
-    border-radius: 40px;
+    border-radius: 40px 40px 0 0 ;
     background-color: #00309E;
     color: white;
     padding: 30px;
+    margin-top: 30px;
 }
-
+.section-header{
+    font-size: 26px;
+    font-weight: bold;
+}
 .form-control {
     background-color:#F0F4FF ;
     border: solid ;
@@ -30,6 +31,7 @@
     margin: 10px;
     color: #00309E;
 }
+
 .section{
     margin-top: 30px;
     padding:50px 30px;
@@ -39,6 +41,59 @@
 .question {
     width: 400px;
 }
+.col select {
+    height :36px;
+    width: 160px;
+}
+#submit {
+    height:50px;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    border: solid 4px rgb(40, 52, 207); ;
+    border-radius: 20px;
+    color: rgb(40, 52, 207);
+    margin-top: 20px;
+}
 
 
+
+
+/* for the stars beginning  */
+div.stars {
+    width: 270px;
+    display: inline-block;
+  }
+  
+  input.star { display: none; }
+  
+  label.star {
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    color: #444;
+    transition: all .2s;
+    
+  }
+  
+  input.star:checked ~ label.star:before {
+    content: '\f005';
+    color: #FD4;
+    transition: all .25s;
+  }
+  
+  input.star-5:checked ~ label.star:before {
+    color: #FE7;
+    text-shadow: 0 0 20px #952;
+  }
+  
+  input.star-1:checked ~ label.star:before { color: #F62; }
+  
+  label.star:hover { transform: rotate(-15deg) scale(1.3); }
+  
+  label.star:before {
+    content: '\f006';
+    font-family: FontAwesome;
+  }
+/* stars css end  */
 
